@@ -4,3 +4,10 @@ backgroundColor="#a7e2c4"
 secondaryBackgroundColor="#7ece52"
 textColor="#000000"
 font="serif"
+
+[browser]
+gatherUsageStats = false
+
+[layout]
+initialSidebarState = "collapsed"
+layout="wide"
