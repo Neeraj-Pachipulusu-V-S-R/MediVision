@@ -10,4 +10,4 @@ gatherUsageStats = false
 
 [layout]
 initialSidebarState = "collapsed"
-layout="wide"
+initialLayout = "wide"
