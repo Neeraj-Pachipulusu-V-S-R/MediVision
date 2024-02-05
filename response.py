@@ -70,7 +70,7 @@ def openaiResponse(Report_file,language,llm):
 
 def chat_response(text_from_pdf, query, OpenAi_Api_Key):
     try:
-        llm_model = ChatOpenAI(model= "gpt-3.5-turbo",temperature=0.0, streaming=True)
+        llm_model = ChatOpenAI(model= "gpt-3.5-turbo",openai_api_key=OpenAi_Api_Key,temperature=0.0, streaming=True)
         memory = ConversationBufferWindowMemory(
         llm=llm_model, memory_key="history", return_messages=True,k=10)
 
