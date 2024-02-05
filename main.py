@@ -36,6 +36,7 @@ if OpenAPIAI:
                     # Display user message in the chat message container
                     with st.chat_message("user"):
                         st.markdown(prompt)
+                    with st.chat_message("assistant"):                        
                         full_response=st.write_stream(chat_response(st.session_state.report_text, prompt, OpenAPIAI))
                         st.session_state.messages.append({"role": "assistant", "content": full_response})
                         
