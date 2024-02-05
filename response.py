@@ -21,8 +21,6 @@ from langchain.prompts import (
     MessagesPlaceholder,
     SystemMessagePromptTemplate,
 )
-from dotenv import load_dotenv
-load_dotenv()
 prompt_templates = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
@@ -30,9 +28,6 @@ prompt_templates = ChatPromptTemplate(
         MessagesPlaceholder(variable_name="history"),
         HumanMessagePromptTemplate.from_template("{question},")], input_variables=["user_details", "instruction_for_bot"])
 
-llm_model = ChatOpenAI(model= "gpt-3.5-turbo",temperature=0.0, streaming=True)
-memory = ConversationBufferWindowMemory(
-        llm=llm_model, memory_key="history", return_messages=True,k=10)
 
 
 def TextExtractor(DocumentFile):
@@ -75,7 +70,11 @@ def openaiResponse(Report_file,language,llm):
 
 def chat_response(text_from_pdf, query, OpenAi_Api_Key):
     try:
-        
+        llm_model = ChatOpenAI(model= "gpt-3.5-turbo",temperature=0.0, streaming=True)
+        memory = ConversationBufferWindowMemory(
+        llm=llm_model, memory_key="history", return_messages=True,k=10)
+
+
         prompt_templates = ChatPromptTemplate(
         messages=[
             SystemMessagePromptTemplate.from_template(
