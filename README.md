@@ -45,15 +45,20 @@ This application is designed to analyze human medical reports, providing respons
 ## Getting Started
 
 1. **Installation:**
-   - Clone the repository: `git clone https://github.com/AIOnGraph/MediVision.git`
-   - Install dependencies: `pip install -r requirements.txt`
+   - Clone the repository:
+     -- `git clone https://github.com/AIOnGraph/MediVision.git`
+     -- `cd MediVision`
+   - Install dependencies:
+      -- `pip install -r requirements.txt`
 
 2. **Running the Application:**
-   - Navigate to the project directory and run: `streamlit run main.py`
+   - Navigate to the project directory and run:
+     -- `streamlit run main.py`
 
 3. **Usage:**
    - Open the provided URL in your browser to access the application.
-     --https://health-report-analysis.streamlit.app/
+     - [https://health-report-analysis.streamlit.app/](https://health-report-analysis.streamlit.app/)
+
 
 ## Support and Feedback
 
