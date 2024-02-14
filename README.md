@@ -26,15 +26,14 @@ This application is designed to analyze human medical reports, providing respons
 
 - **Streamlit Interface:**
   - The user interface is created using Streamlit, ensuring a user-friendly and easily navigable experience.
-  - 
+    
 - **OpenAI API Key Input:**
   - Users need to provide their OpenAI API key for utilizing the natural language processing features.
-  - Follow the instructions below to input your OpenAI API key.
-    -- Follow the steps below to input your OpenAI API key into the application:
-        1. Visit the [OpenAI website](https://www.openai.com/) and log in to your account.
-        2. Navigate to your account settings or API section to find your API key.
-        3. Copy your API key from the OpenAI website.
-        -- Note: Keep your API key confidential and avoid sharing it publicly. It is recommended to use environment variables or a secure configuration method to protect sensitive information.
+  - Follow the steps below to input your OpenAI API key into the application:
+        -- Visit the [OpenAI website](https://www.openai.com/) and log in to your account.
+        -- Navigate to your account settings or API section to find your API key.
+        -- Copy your API key from the OpenAI website.
+        --- Note: Keep your API key confidential and avoid sharing it publicly. It is recommended to use environment variables or a secure configuration method to protect sensitive information.
 
 
 
